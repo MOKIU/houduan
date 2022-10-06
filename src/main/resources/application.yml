@@ -2,8 +2,8 @@
 spring:
   datasource:
     username: root
-    password: 123456789
-    url: jdbc:mysql://localhost:3306/tests?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true
+    password: 18631777600aA@
+    url: jdbc:mysql://localhost:3306/sast_database?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 #mybatis会在resources的mapper目录下寻找xml文件

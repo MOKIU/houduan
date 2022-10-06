@@ -10,4 +10,26 @@
         FROM product
         WHERE pro_name = #{proName}
     </select>
+    <insert id="insertProduct">
+        insert into product (pro_name, price)
+        values (#{proName}, #{price})
+    </insert>
+    <delete id="removeProduct">
+        delete from product
+        where pro_name = #{proName}
+    </delete>
+    <update id="updatePrice">
+        update product
+        set price = #{price}
+        where pro_name = #{proName}
+    </update>
+    <insert id="insertUser">
+        insert into user (userName, password)
+        values (#{userName}, #{password})
+    </insert>
+    <select id="getPassword" resultType="String">
+        SELECT password
+        FROM user
+        WHERE userName = #{userName}
+    </select>
 </mapper>
